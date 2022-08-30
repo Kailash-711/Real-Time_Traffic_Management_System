@@ -1,4 +1,4 @@
-## Trafic Light Control Using Image Processing With openCV 
+## Real-Time Traffic Management System
 
 ### Objective
 To control traffic lights efficiently based on traffic congestion. 
@@ -11,8 +11,8 @@ To control traffic lights efficiently based on traffic congestion.
    - periodical processing of traffic lanes
              
 
-### Working Model
- - Application written in Python and c++ ( refer readme.md at cpp folder for more info about c++ ) and  runs in windows environment
+# Working Model
+ - Application written in Python and runs in windows environment
  - Vehicle present in lanes is detected by sensors and web cams
  - Sensors if used to detect traffic, must be connected to Arduino board and Arduino board
    connected to application windows machine via serial port. Application
@@ -25,7 +25,7 @@ To control traffic lights efficiently based on traffic congestion.
  - Virtual Traffic Lights or if LEDs are used as traffic lights they must be connected to Arduino board
    and application communicates with Arduino to on/off LEDs 
 
-### Requirements
+# Requirements
    This Model has been built to work under following software/hardware environments  
    - Windows 10 home
    - Python 3.9.6
@@ -121,7 +121,7 @@ This is the main table (sit1.tx) which specifies information of other tables
               Desirable values for cam no, detectarea, mincarea, rtime and rdelay can be found out by  
               running chkcam.py.           
            
-#### Priority Assign Table  
+# Priority Assign Table  
 
      { "prtyid":"lane1-1", "type":"s", "pt":20, "maxt":2, "debug":"Y",  
        "parms": { "sensor":"A3",  "comport":"c1", "sensorid":"s3", "rdelay":1, "rtime":50, "srtm":50 } }  
@@ -133,7 +133,7 @@ This is the main table (sit1.tx) which specifies information of other tables
      Other parameters are same as of lane definition table.
 
 
-#### Traffic Light Control Table  
+# Traffic Light Control Table  
 
     { "lane":1,  
       "red":[ ["c1", [3,"O",0], [4,"F",1000], [2,"O",0], [3,"F",0] ] ],  
@@ -171,22 +171,22 @@ This is the main table (sit1.tx) which specifies information of other tables
     [ 1,["R-2","Y-3","G-4"] ]  - lane 1 has three lights with id 2, 3 and 4. Light 2 is Red, Light 3 is Yellow and light 4 is Green.
     
     
-### Test System
+# Test System
 After system is setup all the sensors, LEDs and web cams must be checked  
 
-#### py chksensor.py COM3 A0  
+# py chksensor.py COM3 A0  
 To check a sensor connected to analog pin ( for ex. A0 ) of Arduino board connected to a   
 serial port ( for ex. COM3 ) of windows  Here desirable values for "srtm", "rtime" and "rdelay" can be found ( by modifying chksensor.py program )  
 
-#### py chkled.py COM3 2
+# py chkled.py COM3 2
 To check LED connected to digital pin ( for ex. 2 ) 
 
-#### py chkcam.py 0 chkcam.txt
+# py chkcam.py 0 chkcam.txt
 To check Cam connected to windows machine ( for ex. cam 0 ) and cam info given in the chkcam.txt file.
 Here number assign to a cam by windows and desirable values for "detectarea", "mincarea" and maxcarea parms 
 of the lane entry of lane definition table is specified in chkcam.txt file.  
 
-### Conclusion
+# Conclusion
 - This system is s single threaded and useful to control traffic in
 moderately congested traffic.
 - To achieve high efficiency and redundancy to handle high traffic lanes
