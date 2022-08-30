@@ -1,0 +1,2 @@
+{ "prtyid":"lane1-1", "type":"s", "pt":3, "maxt":5, "debug":"Y", "parms": { "sensor":"A1", "comport":"c1", "sensorid":"s3", "rdelay":10, "rtime":100, "srtm":150 } }
+{ "prtyid":"lane3-3", "type":"s", "pt":3, "maxt":5, "debug":"Y", "parms": { "sensor":"A5", "comport":"c1", "sensorid":"s4", "rdelay":10, "rtime":100, "srtm":150 } }

@@ -1,0 +1,4 @@
+{"lane":1, "type":"s", "prtyid":["lane1-1"], "maxt":5, "skipc":0, "debug":"Y", "parms": { "sensor":"A0", "comport":"c1", "sensorid":"s1", "rdelay":10, "rtime":100, "srtm":150 } }
+{"lane":2, "type":"c", "maxt":5, "skipc":0, "debug":"Y", "parms": { "cam":0, "camid":"cam1", "camtype":" ", "detectarea":[220,20,300,300], "mincarea":1500, "maxcarea":16000,"rdelay":0.1, "rtime":1, "viewcam":1 } }
+{"lane":3, "type":"s", "prtyid":["lane3-3"], "maxt":5, "skipc":0, "debug":"Y", "parms": { "sensor":"A4", "comport":"c1", "sensorid":"s2", "rdelay":10, "rtime":100, "srtm":150 } }
+{"lane":4, "type":"c", "maxt":5, "skipc":0, "debug":"Y", "parms": { "cam":1, "camid":"cam2", "camtype":" ", "detectarea":[200,5,240,250], "mincarea":1500, "maxcarea":20000, "rdelay":0.1, "rtime":1, "viewcam":1 } }
